@@ -314,30 +314,31 @@
 <!-- COMIENZO SECCION CONTACT -->
 
 <section id="contact">
-	
+	<div id="contactForm">
 	<div class="contenedorformulario">
-		<form action="" class="form">
+		<form method="POST" action="consulta.php" class="form">
 			<div class="form-header">
 				<h1 class="form-title">C<span>ontact</span></h1>
 			</div>
 
 			<label for="nombre" class="form-label">Name:</label>
-			<input type="text" id="nombre" class="form-input" placeholder="At least 3 letters" required
+			<input type="text" name="name" id="name" class="form-input" placeholder="At least 3 letters" required
 			pattern="[A-Za-z]{3,40}" >
 
 			<label for="telephone" class="form-label">Telephone:</label>
-			<input type="text" id="telephone" class="form-input" placeholder="Between 6 and 10 digits"required
+			<input type="text" name="phone" id="phone" class="form-input" placeholder="Between 6 and 10 digits"required
             pattern="[0-9]{6,10}">
 
 			<label for="correo" class="form-label">E- Mail:</label>
-			<input type="email" id="correo" class="form-input" placeholder="Type your e-mail" required>
+			<input type="email" name="email" id="email" class="form-input" placeholder="Type your e-mail" required>
 
 			<label for="mensaje" class="form-label">Message:</label>
-			<textarea id="mensaje" class="form-textarea" placeholder="Write your message"  
+			<textarea id="message" name="message" class="form-textarea" placeholder="Write your message"  
 			minlength="5" maxlength="80" pattern="[A-Za-z0-9]"></textarea>
 
-			<input type="submit" class="btn-submit" value="Send Message" id="enviar" onclick="show_alert();">
+			<button type="submit" class="btn-submit" id="sendMessageButton" onclick="show_alert();">Send</button>
 		</form>
+		</div>
 	</div>
 </section>
 <!-- FIN SECCION CONTACT -->
@@ -368,7 +369,7 @@
 	<div class="loader-wrapper">
 		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
-	
+
 <script src="https://kit.fontawesome.com/74e3aee7f7.js" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/25bfededf4.js"></script>
 <script src="dist/js/lightbox-plus-jquery.min.js"></script>

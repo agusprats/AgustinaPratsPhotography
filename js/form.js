@@ -1,8 +1,8 @@
 
-  var fullname=document.getElementById("nombre");
-  var telephone=document.getElementById("telephone");
-  var email=document.getElementById("correo");
-  var message=document.getElementById("mensaje");
+  var fullname=document.getElementById("name");
+  var telephone=document.getElementById("phone");
+  var email=document.getElementById("email");
+  var message=document.getElementById("message");
 
 
 function iniciar(){
@@ -42,17 +42,14 @@ function iniciar(){
         }
     }
     function validarMessage(){
-         if(message.value==''){  
-              message.setCustomValidity('inserte su mensaje');
-              message.style.borderBottomColor='#ff4242';  
-          }else{     
-              message.setCustomValidity('');
-              message.style.borderBottomColor='orange';
-            
-            
-              
-              
-          }
+        if(message.value==''){  
+            message.setCustomValidity('inserte su mensaje');
+            message.style.borderBottomColor='#ff4242';  
+        }else{     
+            message.setCustomValidity('');
+            message.style.borderBottomColor='orange'
+        
+        }
 }
 window.addEventListener("load", iniciar, false);
 

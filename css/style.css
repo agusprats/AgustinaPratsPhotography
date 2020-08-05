@@ -394,10 +394,10 @@ section svg {
 	border-radius: 10px;
 }
 
-#a, #b, #c, #d, img {
+#a #b, #c, #d, img{
 	width: 960px;
 	height: 600px;
-	border-radius: 10px;	
+	border-radius: 10px;
 }
 
 .img-izq {
