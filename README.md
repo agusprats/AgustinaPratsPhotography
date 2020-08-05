@@ -24,7 +24,7 @@ Design and pictures by Agustina Prats<br/>
 Mockup design: Anthony Boyd
 
 <hr>
-<p>See <a href="https://agusprats.github.io/OnePageFormat/" target="new">DEMO</a>
+<p>See <a https://agusprats.github.io/AgustinaPratsPhotography/index.html" target="new">DEMO</a>
 <br/>
 <hr>
 <img src="Mockup3alta.jpg">
