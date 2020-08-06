@@ -319,7 +319,7 @@
 
 			<label for="nombre" class="form-label">Name:</label>
 			<input type="text" name="name" id="name" class="form-input" placeholder="At least 3 letters" required
-			pattern="[A-Za-z]{3,40}" >
+			pattern="^[a-zA-Z0-9_.-]{3,40}*$" >
 
 			<label for="telephone" class="form-label">Telephone:</label>
 			<input type="text" name="phone" id="phone" class="form-input" placeholder="Between 6 and 10 digits"required
@@ -332,7 +332,7 @@
 			<textarea id="message" name="message" class="form-textarea" placeholder="Write your message"  
 			minlength="5" maxlength="80" pattern="[A-Za-z0-9]"></textarea>
 
-			<button type="submit" class="btn-submit" id="sendMessageButton" onclick="show_alert();">Send</button>
+			<input type="submit" class="btn-submit"  value="Send" />
 		</form>
 	</div>
 	
